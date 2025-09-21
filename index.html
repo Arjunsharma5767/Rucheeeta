@@ -261,9 +261,19 @@
                 You mean everything to me, and I'm so grateful to have you in my life.<br>
                 This page is just a small token of how much you mean to me! 💝
             </p>
-            <button class="heart-button" onclick="createHeartExplosion(event)">
-                Click for Love! 💕
-            </button>
+<button class="heart-button" onclick="handleClick(event)">
+    Click for Love! 💕
+</button>
+
+<script>
+function handleClick(event) {
+    createHeartExplosion(event); // Trigger your animation
+    setTimeout(() => {
+        window.location.href = 'index2.html'; // Redirect after animation
+    }, 800); // Adjust delay to match animation duration
+}
+</script>
+
         </div>
     </div>
 
